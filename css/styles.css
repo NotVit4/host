@@ -1,0 +1,333 @@
+/*-----------------header, footer y body-----------------*/
+.logo {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0 40px;
+    line-height: 80px;
+    text-decoration: none;
+    color: aliceblue;
+
+}
+
+header {
+    background-color: #543b32;
+    height: auto;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    
+}
+
+footer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+body {
+    font-family: roboto, Arial, sans-serif;
+    background: linear-gradient(to right, #d7ccc8, #f5f5f5);
+    padding: 90px 20px 0px;
+    background: no-repeat;
+}
+
+/*-----------------Seccion NAV-----------------*/
+
+.home_nav {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 1fr 1fr;
+}
+
+.home_logo {
+    font-size: 30px;
+    display: flex;
+    font-weight: bold;
+    padding: 0 40px;
+    line-height: 80px;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.home_nav li {
+    font-size: 20px;
+    margin: 0px 10px;
+    line-height: 50px;
+    text-transform: uppercase;
+}
+
+.home_nav-link {
+    padding: 8px 8px;
+    border-radius: 3px;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.home_nav ul {
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+    
+    justify-content: space-between;
+}
+
+.home_nav-link:hover {
+    background-color: #3c2a24;
+}
+
+/*-----------------Estilo de formulario Universal-----------------*/
+
+.form_style-main {
+    padding: 20px;
+    border-style: solid;
+    border-color: #586a78;
+    height: max-content;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+
+.form_style-tittle {
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: x-large;
+    font-weight: 600;
+}
+
+.form_style {
+    position: flex;
+    justify-content: center;
+}
+
+.form_style label {
+    display: flex;
+    justify-content: center;
+    padding-top: 18px;
+    margin-bottom: 5px;
+}
+
+.form_style-input {
+    display: flex;
+    justify-content: center;
+}
+
+/*-----------------Estilo botón universal-----------------*/
+
+
+.form_button {
+    display: flex;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    color: #000000;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    background-color: transparent;
+    border-width: 3px;
+    border-style: solid;
+    border-color: #586a78;
+    transition: all 700ms;
+
+}
+
+.form_button:hover {
+    background: #7f98ac;
+    color: #fff !important;
+}
+
+/*-----------------Seccion Consulta universal-----------------*/
+
+.consulta_style-search {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.consulta_style-search input{
+    width: 300px;
+    height: 50px;
+    background: #7a5446;
+    border-style: solid;
+    border-color: #7a5446;
+    padding-left: 45px;
+    border-radius: 5px;
+    transition: all 700ms;
+}
+
+.consulta_style-search input:hover {
+    background: #d7ccc8;
+    border-color: #3c2a24;
+    color: #fff !important;
+}
+
+.consulta_style {
+    text-align: center;
+    padding: 20px 0px;
+    font-size: x-large;
+    font-weight: 600;
+}
+
+.consulta_style-fieldset {
+    display: grid;
+    grid-template-columns: 150px 300px;
+    justify-content: stretch;
+    grid-row-gap: 50px;
+    grid-column-gap: 20px;
+    border-style: solid;
+    border-color: #586a78;
+    padding: 15px;
+}
+
+.consulta_style-orden {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(12 1fr);
+    grid-row-gap: 25px;
+    grid-column-gap: 25px;
+}
+
+/*-----------------Seccion MediaQuerie-----------------*/
+@media (max-width: 1366px){
+
+    .consulta_style-orden {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(12 1fr);
+        grid-row-gap: 25px;
+        grid-column-gap: 25px;
+    }
+
+    .home_logo {
+        font-size: 30px;
+        display: flex;
+        font-weight: bold;
+        padding: 0 40px;
+        line-height: 80px;
+        text-decoration: none;
+        color: aliceblue;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .consulta_style-orden {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(12 1fr);
+        grid-row-gap: 25px;
+        grid-column-gap: 25px;
+    }
+
+    .home_nav {
+        display: grid;
+        flex-direction: row;
+        justify-content: space-between;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .home_logo {
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+        font-weight: bold;
+        padding: 0 40px;
+        line-height: 80px;
+        text-decoration: none;
+        color: aliceblue;
+    }
+
+    header {
+        background-color: #543b32;
+        height: max-content;
+        padding-bottom: auto;
+        width: 100%;
+        top: 0;
+        left: 0;
+        position: fixed;
+        grid-area: header;
+    }
+
+    body {
+        font-family: roboto, Arial, sans-serif;
+        background: linear-gradient(to right, #d7ccc8, #f5f5f5);
+        padding: 180px 20px 0px;
+        background: no-repeat;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .consulta_style-orden {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(12 1fr);
+        grid-row-gap: 25px;
+        grid-column-gap: 25px;
+    }
+
+    .home_nav {
+        display: grid;
+        flex-direction: row;
+        justify-content: space-between;
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 150px;
+    }
+
+    .home_nav ul {
+        margin-right: 40px;
+        list-style: none;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .home_logo {
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+        font-weight: bold;
+        padding: 0 40px;
+        line-height: 80px;
+        text-decoration: none;
+        color: aliceblue;
+    }
+
+    header {
+        background-color: #543b32;
+        height: auto;
+        padding-bottom: 15px;
+        padding-bottom: auto;
+        width: 100%;
+        top: 0;
+        left: 0;
+        position: fixed;
+    }
+
+    .consulta_style-fieldset{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0px 20px;
+        justify-content: stretch;
+        grid-row-gap: 50px;
+        grid-column-gap: 20px;
+        border-style: solid;
+        border-color: #586a78;
+        padding: 15px;
+    }
+
+    body {
+        font-family: roboto, Arial, sans-serif;
+        background: linear-gradient(to right, #d7ccc8, #f5f5f5);
+        padding: 260px 20px;
+        background: no-repeat;
+    }
+}
