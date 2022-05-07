@@ -39,7 +39,7 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main class="image-body">
         <div class="form_style-main">
             <div class="form_style-tittle">
                 Ingresar los siguientes datos para devolver un libro
@@ -48,6 +48,7 @@
 
                 <form action="">
                     <label for="Libro_prestado">Libros prestados: </label>
+                    <div class="form_style-input">
                     <input list="libro_prestado" name="Libro_prestado" placeholder="Libro prestado 1">
                     <datalist id="libro_prestado">
                         <option value="Libro prestado 1">
@@ -57,6 +58,7 @@
                         <option value="Libro prestado 5">
 
                     </datalist>
+                    </div>
                     <a class="form_button" href="devolver_libro_info.html">Mirar Libro</a>
                 </form>
             </div>

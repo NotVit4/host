@@ -18,7 +18,7 @@ header {
     top: 0;
     left: 0;
     position: fixed;
-    
+
 }
 
 footer {
@@ -30,9 +30,15 @@ body {
     font-family: roboto, Arial, sans-serif;
     background: linear-gradient(to right, #d7ccc8, #f5f5f5);
     padding: 90px 20px;
-    background: no-repeat;
 }
 
+.image-body {
+    background-image: url(../img/PipoLogo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
 /*-----------------Seccion NAV-----------------*/
 
 .home_nav {
@@ -45,16 +51,16 @@ body {
     font-size: 30px;
     display: flex;
     font-weight: bold;
-    padding: 0 40px;
-    line-height: 80px;
+    padding: 0px;
+    line-height: 40px;
     text-decoration: none;
     color: aliceblue;
 }
 
 .home_nav li {
     font-size: 20px;
-    margin: 0px 10px;
     line-height: 50px;
+    margin: 0px 10px;
     text-transform: uppercase;
 }
 
@@ -69,7 +75,7 @@ body {
     display: flex;
     margin-right: 40px;
     list-style: none;
-    
+
     justify-content: space-between;
 }
 
@@ -81,13 +87,16 @@ body {
 
 .form_style-main {
     padding: 20px;
-    border-style: solid;
-    border-color: #586a78;
+    border-style:hidden;
+    border-color: rgba(127, 152, 172, 0.6);
+    border-radius: 15px;
     height: max-content;
     width: max-content;
+    margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 50px;
+    background-color: rgba(127, 152, 172, 0.6);
 }
 
 .form_style-tittle {
@@ -114,6 +123,24 @@ body {
     justify-content: center;
 }
 
+.form_style input {
+    border-color: transparent;
+    text-align: center;
+    background-color: transparent;
+    border-bottom: 2px solid gray;
+    outline: 0;
+    font-size: 1rem;
+    padding: 7px 0;
+    background: transparent;
+    transition: all 600ms;
+}
+
+.form_style input:focus{
+    
+    border-bottom: 2px solid #292929;
+}
+
+
 /*-----------------Estilo botón universal-----------------*/
 
 
@@ -126,7 +153,7 @@ body {
     text-decoration: none;
     font-weight: 600;
     font-size: 15px;
-    color: #000000;
+    color: #fff;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 25px;
@@ -134,14 +161,14 @@ body {
     background-color: transparent;
     border-width: 3px;
     border-style: solid;
-    border-color: #586a78;
+    border-color: #fff;
     transition: all 700ms;
 
 }
 
 .form_button:hover {
-    background: #7f98ac;
-    color: #fff !important;
+    background: #fff;
+    color: black !important;
 }
 
 /*-----------------Seccion Consulta universal-----------------*/
@@ -152,7 +179,7 @@ body {
     padding: 10px;
 }
 
-.consulta_style-search input{
+.consulta_style-search input {
     width: 300px;
     height: 50px;
     background: #7a5446;
@@ -183,7 +210,9 @@ body {
     grid-row-gap: 50px;
     grid-column-gap: 20px;
     border-style: solid;
-    border-color: #586a78;
+    border-radius: 15px;
+    background-color: rgba(127, 152, 172, 0.6);
+    border-color: rgba(127, 152, 172, 0.6);
     padding: 15px;
 }
 
@@ -196,7 +225,7 @@ body {
 }
 
 /*-----------------Seccion MediaQuerie-----------------*/
-@media (max-width: 1366px){
+@media (max-width: 1366px) {
 
     .consulta_style-orden {
         display: grid;
@@ -215,6 +244,7 @@ body {
         text-decoration: none;
         color: aliceblue;
     }
+
 }
 
 @media (max-width: 768px) {
@@ -261,7 +291,7 @@ body {
         font-family: roboto, Arial, sans-serif;
         background: linear-gradient(to right, #d7ccc8, #f5f5f5);
         padding: 180px auto;
-        background: no-repeat;
+    
     }
 }
 
@@ -312,7 +342,7 @@ body {
         position: fixed;
     }
 
-    .consulta_style-fieldset{
+    .consulta_style-fieldset {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         margin: 0px 20px;
@@ -328,6 +358,7 @@ body {
         font-family: roboto, Arial, sans-serif;
         background: linear-gradient(to right, #d7ccc8, #f5f5f5);
         padding: 260px 0px;
-        background: no-repeat;
+        
     }
 }
+

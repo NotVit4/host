@@ -15,7 +15,7 @@
     <title>Biblioteca Pipo</title>
 </head>
 
-<body>
+<body class="image-body">
     <header class="header">
         <!--<div class="home_tittle">
             <img src="../img/IMG_20220402_184004__01.jpg" alt="Imagen del Titulo" width="125">
@@ -46,11 +46,14 @@
         <div class="form_style">
             <form action="">
                 <label for="Titulo">Título: </label>
+                <div class="form_style-input">
                 <input type="text" name="Titulo" placeholder="Caballo de fuego">
-
+                </div>
                 <label for="Autor">Autor: </label>
+                <div class="form_style-input">
                 <input list="autor" name="Autor" placeholder="Autor 1">
-
+                </div>
+                <div class="form_style-input">
                 <datalist id="autor">
                     <option value="Autor 1">
                     <option value="Autor 2">
@@ -58,8 +61,9 @@
                     <option value="Autor 4">
                     <option value="Autor 5">
                 </datalist>
-
+                </div>
                 <label for="Editorial">Editorial: </label>
+                <div class="form_style-input">
                 <input list="editorial" name="Editorial" placeholder="Editorial 1">
                 <datalist id="editorial">
                     <option value="Editorial 1">
@@ -68,17 +72,27 @@
                     <option value="Editorial 4">
                     <option value="Editorial 5">
                 </datalist>
-
+                </div>
                 <label for="ISBN">ISBN: </label>
+                <div class="form_style-input">
                 <input type="number" name="ISBN" placeholder="9788483651063">
+                </div>
                 <label for="sinopsis">Sinópsis: </label>
+                <div class="form_style-input">
                 <textarea name="sinopsis" id="" cols="30" rows="10"></textarea>
+                </div>
                 <label for="imagen">Portada del libro: </label>
+                <div class="form_style-input">
                 <input type="file" name="imagen" accept="image/*">
+                </div>
                 <label for="pasillo">Pasillo: </label>
+                <div class="form_style-input">
                 <input type="text" name="pasillo" id="" placeholder="Pasillo 7">
+                </div>
                 <label for="estanteria">Estanteria: </label>
+                <div class="form_style-input">
                 <input type="text" name="estanteria" id="" placeholder="Estanteria 2">
+                </div>
                 <a href="#" class="form_button">Subir Libro</a>
 
             </form>
