@@ -50,16 +50,20 @@ body {
 .home_logo {
     font-size: 30px;
     display: flex;
+    justify-content: flex-start;
+    align-items: center;
     font-weight: bold;
     padding: 0px;
-    line-height: 40px;
     text-decoration: none;
     color: aliceblue;
+    padding-left: 50px;
 }
 
 .home_nav li {
+    display: flex;
     font-size: 20px;
-    line-height: 50px;
+    justify-content: center;
+    align-items: center;
     margin: 0px 10px;
     text-transform: uppercase;
 }
@@ -75,7 +79,7 @@ body {
     display: flex;
     margin-right: 40px;
     list-style: none;
-
+    justify-content: center;
     justify-content: space-between;
 }
 
