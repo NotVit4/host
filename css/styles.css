@@ -96,6 +96,7 @@ body {
     color: aliceblue;
 }
 
+
 /*-----------------Home-----------------*/
 
 .home_logo-image {
@@ -166,6 +167,7 @@ body {
     font-size: x-large;
     font-weight: 600;
     color: #f5f5f5;
+    
 }
 
 .form_style {
@@ -488,5 +490,9 @@ body {
         align-items: center;
         margin: 0px 10px;
         text-transform: uppercase;
+    }
+
+    .form_style-tittle{
+        font-size: 16px;
     }
 }
