@@ -80,10 +80,10 @@ body {
 .home_nav ul {
     list-style: none;
     justify-content: center;
-    
+
 }
 
-.nav-link{
+.nav-link {
     color: aliceblue !important;
 }
 
@@ -95,7 +95,6 @@ body {
 .home_logo:hover {
     color: aliceblue;
 }
-
 
 /*-----------------Home-----------------*/
 
@@ -167,7 +166,6 @@ body {
     font-size: x-large;
     font-weight: 600;
     color: #f5f5f5;
-    
 }
 
 .form_style {
@@ -390,7 +388,7 @@ body {
         top: 100%;
         left: auto !important;
         margin-top: 0.125rem;
-        
+
     }
 
     .home_nav li {
@@ -492,7 +490,17 @@ body {
         text-transform: uppercase;
     }
 
-    .form_style-tittle{
-        font-size: 16px;
+    .navbar-light .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+
+    }
+
+    .navbar-light .navbar-toggler {
+        border: 1px solid white !important;
+    }
+
+    .form_style-main {
+        height: min-content;
+        width: min-content;
     }
 }
